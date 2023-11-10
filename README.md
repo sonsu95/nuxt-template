@@ -1,6 +1,6 @@
 # Nuxt 3 Eslint Template
 
-## Upgrade
+## Nuxt Upgrade
 ```bash
 npx nuxi upgrade
 ```
