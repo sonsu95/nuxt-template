@@ -16,11 +16,12 @@ module.exports = {
     'plugin:nuxt/recommended',
     'airbnb-base',
     'plugin:vue/vue3-recommended',
-    '@nuxtjs/eslint-config-typescript',
     'plugin:@typescript-eslint/eslint-recommended',
+    '@nuxtjs/eslint-config-typescript',
     'prettier',
   ],
   rules: {
+    'import/newline-after-import': 'off',
     'no-param-reassign': 'off',
     'no-void': 'off',
     'no-nested-ternary': 'off',
@@ -48,27 +49,38 @@ module.exports = {
       'error',
       {
         selector: 'LabeledStatement',
-        message: 'Labels are a form of GOTO; using them makes code confusing and hard to maintain and understand.',
+        message:
+          'Labels are a form of GOTO; using them makes code confusing and hard to maintain and understand.',
       },
       {
         selector: 'WithStatement',
-        message: '`with` is disallowed in strict mode because it makes code impossible to predict and optimize.',
+        message:
+          '`with` is disallowed in strict mode because it makes code impossible to predict and optimize.',
       },
     ],
-    'prefer-destructuring': ['error', {
-      array: false,
-      object: true,
-    }, {
-      enforceForRenamedProperties: false,
-    }],
-    'lines-between-class-members': ["error", "always", { "exceptAfterSingleLine": true }],
+    'prefer-destructuring': [
+      'error',
+      {
+        array: false,
+        object: true,
+      },
+      {
+        enforceForRenamedProperties: false,
+      },
+    ],
+    'lines-between-class-members': ['error', 'always', { exceptAfterSingleLine: true }],
     'vue/no-setup-props-destructure': 'off',
-    'max-len': ['warn', 100, 2, {
-      ignoreUrls: true,
-      ignoreComments: false,
-      ignoreRegExpLiterals: true,
-      ignoreStrings: true,
-      ignoreTemplateLiterals: true,
-    }],
+    'max-len': [
+      'warn',
+      100,
+      2,
+      {
+        ignoreUrls: true,
+        ignoreComments: false,
+        ignoreRegExpLiterals: true,
+        ignoreStrings: true,
+        ignoreTemplateLiterals: true,
+      },
+    ],
   },
-}
+};
