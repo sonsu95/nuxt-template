@@ -21,6 +21,7 @@ module.exports = {
     'prettier',
   ],
   rules: {
+    'prettier/prettier': 'error',
     'import/newline-after-import': 'off',
     'no-param-reassign': 'off',
     'no-void': 'off',
