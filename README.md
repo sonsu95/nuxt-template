@@ -2,7 +2,7 @@
 
 ## Nuxt Upgrade
 ```bash
-npx nuxi upgrade
+bunx nuxi upgrade
 ```
 
 ## Install
