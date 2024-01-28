@@ -1,11 +1,13 @@
-# Nuxt 3 Eslint Template
+# Nuxt 3 Template
 
 ## Nuxt Upgrade
 ```bash
 bunx nuxi upgrade
 ```
-
-## Install
+## How to use
 ```bash
-bun install
+# Requires docker-desktop
+docker-compose up --build -d # Run the container after building the image
+docker-compose up # Run the container
+docker-compose down # Terminating a Container
 ```
