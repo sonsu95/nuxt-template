@@ -17,6 +17,7 @@ module.exports = {
     'airbnb-base',
     'plugin:vue/vue3-recommended',
     'plugin:@typescript-eslint/eslint-recommended',
+    '@nuxt/eslint-config',
     '@nuxtjs/eslint-config-typescript',
     'prettier',
   ],
