@@ -1,12 +1,15 @@
-version: "3"
 services:
-  application:
-    build: 
-      context: ./
-      dockerfile: Dockerfile.dev
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: frontend
     working_dir: /usr/src/app
-    ports: 
-      - 3000:3000
+    ports:
+      - "3000:3000"
     volumes:
       - ./:/usr/src/app
-  
+      - /usr/src/app/node_modules  # 로컬 node_modules 폴더를 컨테이너와 동기화하지 않음
+    environment:
+      NODE_ENV: development  # 환경 변수 설정
+    command: pnpm run dev  # 개발 서버 실행 커맨드
