@@ -2,7 +2,7 @@
 
 ## Nuxt Upgrade
 ```bash
-bunx nuxi upgrade
+npx nuxi upgrade
 ```
 ## How to use
 ```bash
